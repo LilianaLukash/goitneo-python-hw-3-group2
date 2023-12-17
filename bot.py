@@ -1,6 +1,6 @@
 from collections import UserDict
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta 
 import pickle
 from pprint import pprint 
 
@@ -32,12 +32,11 @@ class Phone(Field):
     def __init__(self, value):
         self.value = value
         super().__init__(value)
-        
-        
+             
     def __str__(self):
         return str(self.value)
 
-        
+    
 class Record:
     def __init__(self, name, birthday = None):
         self.name = Name(name)
